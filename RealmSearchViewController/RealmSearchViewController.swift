@@ -252,7 +252,7 @@ public class RealmSearchViewController: UITableViewController, RealmSearchResult
         return queue
     }()
     
-    private lazy var searchController: UISearchController = {
+    public lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
         controller.searchResultsUpdater = self
         controller.dimsBackgroundDuringPresentation = false
