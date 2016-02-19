@@ -284,7 +284,7 @@ public class RealmSearchViewController: UITableViewController, RealmSearchResult
         }
     }
     
-    private func searchPredicate(text: String?) -> NSPredicate? {
+    public func searchPredicate(text: String?) -> NSPredicate? {
         if (text != "" &&  text != nil) {
             
             let leftExpression = NSExpression(forKeyPath: self.searchPropertyKeyPath!)
